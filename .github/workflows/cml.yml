@@ -2,10 +2,11 @@ name: model-wine-quality
 on: [push] 
 jobs:  
   run:    
-    runs-on: [ubuntu-latest]     
-    steps:      
+    runs-on: [ubuntu-latest] 
+    container:     
+    steps:
       - uses: actions/checkout@v2              
-        - name: cml_run        
+      - name: cml_run        
         env:          
           repo_token: ${{secrets.PAT}}
         run:
