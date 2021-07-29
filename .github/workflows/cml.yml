@@ -13,7 +13,7 @@ jobs:
 
           # Your ML workflow goes here
           #/usr/bin/python3 -m pip install --upgrade pip
-          #pip install -r requirements.txt
+          pip install -r requirements.txt
           python train.py
 
           echo "MODEL METRICS"
