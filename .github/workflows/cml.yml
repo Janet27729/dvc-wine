@@ -9,7 +9,9 @@ jobs:
       - name: cml_run        
         env:          
           repo_token: ${{secrets.PAT}}
-        run:
+        run: |
+        
+          # Your ML workflow goes here
           pip install -r requirements.txt
           python train.py
           
