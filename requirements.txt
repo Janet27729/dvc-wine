@@ -1,6 +1,0 @@
-python_version > '2.7'
-pandas
-sklearn
-matplotlib
-seaborn
-numpy
