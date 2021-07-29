@@ -10,12 +10,4 @@ jobs:
         env:          
           repo_token: ${{secrets.PAT}}
         run:
-
-          # Your ML workflow goes here
           echo "MODEL METRICS"
-          pip install --upgrade pip
-          pip install -r requirements.txt
-          python train.py
-
-          echo "MODEL METRICS"
-          cat metrics.txt
